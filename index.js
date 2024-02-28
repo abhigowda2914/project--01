@@ -1,25 +1,36 @@
-const refheading = document.getElementById("main-heading");
 
-refheading.textContent = "Fruit World";
+const mainHeading = document.querySelector("#main-heading");
+mainHeading.style.textAlign = "right";
 
-refheading.style.color = "orange";
+const headfruits = document.querySelector(".fruits");
 
-const res = document.getElementById("header");
+headfruits.style.backgroundColor = "grey";
+headfruits.style.padding = "30px";
+headfruits.style.margin = "30px";
+headfruits.style.width = "50%";
+headfruits.style.borderRadius = "5px";
+ headfruits.style.listStyleType = "none";
 
-res.style.backgroundColor = "green";
+const basketHeading = document.querySelector("h2");
+basketHeading.style.marginLeft = "30px";
+basketHeading.style.color = "brown";
 
-res.style.borderBottom = "3px solid orange";
+const fruititem = document.querySelectorAll('.fruit');
 
-const ans =document.getElementById("basket-heading");
-
-ans.style.color = "green";
-
-const val = document.getElementsByClassName("fruit");
-val[2].style.backgroundColor = "yellow";
-for(let i = 0;i<val.length;i++){
-  val[i].style.fontWeight = "bold";
+for(let i = 0;i<fruititem.length;i++){
+  fruititem[i].style.backgroundColor="white";
+  fruititem[i].style.padding = "10px";
+  fruititem[i].style.borderRadius = "5x";
+  fruititem[i].style.margin = "10px";
 }
 
+const counteven = document.querySelectorAll('.fruit:nth-child(even)');
 
-const final = document.getElementById("thanks");
-final.innerHTML = "<p>Please visit us again</p>"
+for(let i = 0;i<counteven.length;i++){
+  counteven[i].style.backgroundColor = "red";
+  counteven[i].style.color ="white";
+}
+
+  
+
+
