@@ -20,6 +20,6 @@ for(let i = 0;i<val.length;i++){
   val[i].style.fontWeight = "bold";
 }
 
-
+console.log('hello world');
 const final = document.getElementById("thanks");
 final.innerHTML = "<p>Please visit us again</p>"
