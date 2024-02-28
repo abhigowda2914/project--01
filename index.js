@@ -31,6 +31,30 @@ for(let i = 0;i<counteven.length;i++){
   counteven[i].style.color ="white";
 }
 
+const para = document.createElement('h3');
+
+const paratext = document.createTextNode( "Buy high quality organic fruits online");
+
+para.append(paratext);
+const div = document.getElementsByTagName('div');
+const firstdiv = div[0];
+firstdiv.append(para);
+
+para.className = "para1";
+para.style.fontStyle = 'italic';
+
+const list1 = document.createElement('p');
+const listetxt = document.createTextNode( "Total fruits: 4");
+list1.append(listetxt);
+
+const fruitslist = document.querySelector('.fruits');
+const seconddiv = div[1];
+seconddiv.insertBefore(list1,fruitslist);
+list1.id='fruits-total';
+
+
+
+
   
 
 
