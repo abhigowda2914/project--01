@@ -1,16 +1,4 @@
 
-
-const final = document.getElementById("thanks");
-final.innerHTML = "<p>Please visit us again</p>"
-
-const listItem = document.getElementsByTagName("li");
-listItem[4].style.color = "blue";
-
-for(let i = 0;i<listItem.length;i++){
-  listItem[i].style.fontStyle = "italic";
-}
-
-
 const mainHeading = document.querySelector("#main-heading");
 mainHeading.style.textAlign = "right";
 
